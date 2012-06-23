@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "activerepo"
   gem.require_paths = ["lib"]
   gem.version       = Activerepo::VERSION
+
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency "grit"
+  gem.add_development_dependency "octopi"
 end
