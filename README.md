@@ -1,6 +1,9 @@
 # Activerepo
 
-TODO: Write a gem description
+#### Git repos with all the trimmings.
+
+A (still yet) opinionate gem for managing git repository state and actions
+
 
 ## Installation
 
@@ -18,7 +21,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`my_repo = ActiveRepo('/path/to/repo', repo_type)`
+
+* Local git repo methods current provided by Grit
+* Remote git repo methods currently provided by the GitHub API
+* Dependency info provided by Bunder
 
 ## Contributing
 
