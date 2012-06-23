@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-   my_repo = ActiveRepo('/path/to/repo', repo_type)
+   my_repo = FileUtils::ActiveRepo.new('/path/to/repo', repo_type)
 
 * `my_repo.local`:        Local git repo methods current provided by Grit
 * `my_repo.remote`:       Remote git repo methods currently provided by the GitHub API
@@ -43,7 +43,7 @@ Or install it yourself as:
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+2. Feature (`git checkout -b my-new-feature`)
+3. Commit (`git commit -am 'Added some feature'`)
+4. Push it (`git push origin my-new-feature`)
+5. The Pull Request
