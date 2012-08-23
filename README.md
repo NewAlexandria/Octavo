@@ -1,6 +1,8 @@
-# Activerepo
+# Octavo
 
-#### Git repos with all the trimmings.
+![Octavo_logo](https://raw.github.com/NewAlexandria/Octavo/master/public/Octavo-175.png)
+
+#### Handle git repos with a little bit of class.
 
 A (still yet) opinionate gem for managing git repository state and actions
 
