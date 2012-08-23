@@ -3,7 +3,7 @@ module Apps
   @apps_exclude    = @general_exclude
   @all_apps        = Dir.entries("#{infrastructure_root}/apps").reject {|dirs| @apps_exclude.include? dirs }
 
-  def get_apps_tag( which = :last) 
+  def get_tag( which = :last) 
     # strictly-speaking, this gets branches, not tags.  tags are prefix "v" not "rel-"
     return (`cd #{infrastructure_root}/apps/#{repo_name}; git branch -v`. # get repo branches 
                 gsub("*", "").split("\n")).                     # just the lines 
@@ -13,7 +13,7 @@ module Apps
               send(which).reverse.join("-")                     # get target, recombine
   end
 
-  def make_apps_tag(repo)
+  def make_tag(repo)
     return Date.today.strftime("%Y-%m-%d")
   end
 

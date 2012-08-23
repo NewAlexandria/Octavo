@@ -1,8 +1,8 @@
-require "activerepo/version"
+require "octavo/version"
 require 'grit'
 
 module FileUtils
-  class Activerepo 
+  class Octavo 
     attr_accessor :repo_type,  :path, :repo_name
     attr_accessor :local, :dependencies
     attr_accessor :ent
@@ -29,11 +29,11 @@ module FileUtils
       end
 
       # define type-related module methods dynamically
-      if File.exists? "lib/activerepo/#{self.repo_type}.rb"
-        require "lib/activerepo/#{self.repo_type}"
+      if File.exists? "lib/octavo/#{self.repo_type}.rb"
+        require "lib/octavo/#{self.repo_type}"
         extend Module.const_get( self.repo_type.capitalize.to_sym )
       else
-        warn "Class instantiated without module functions because the module files was not found at activerepo/#{self.repo_type}.rb"
+        warn "Class instantiated without module functions because the module files was not found at octavo/#{self.repo_type}.rb"
       end
     end
 
