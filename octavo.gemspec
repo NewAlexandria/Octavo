@@ -2,7 +2,7 @@
 require File.expand_path('../lib/activerepo/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Zachary StarkJones"]
+  gem.authors       = ["New Alexandria"]
   gem.email         = ["zak@newalexandria.org"]
   gem.description   = %q{Git repos with all the trimmings}
   gem.summary       = %q{ActiveRepo manages the common tasks surrounding version control for rails apps and gems. It follows the git-flow style of master-dev-feature-hotfix branching.  }
